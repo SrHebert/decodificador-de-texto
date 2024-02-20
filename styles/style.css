@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter",sans-serif;
+}
+body {
+    background-color: #c7d1f1;
+    box-sizing: border-box;
+}
+.logo-inicio{
+    padding: 0.625rem;
+}
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    margin: 0.625rem;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.apresentacao-caixa-digite-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 0 0 2rem;
+}
+.caixa-de-texto{
+    background-color: transparent;
+    border: none;
+    resize: none;
+    color: #0A3871;
+    display: flex;
+    font-size: 1.8rem;
+    height: 22rem;
+    width: 40.37rem;
+    padding: 4rem 0 0 5rem;
+}
+.img-menino-com-lupa{
+    padding-top: 3rem;
+}
+.apresentacao-caixa-texto-criptografado{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 30px;
+    height: 33rem;
+    width: 31.25rem;
+    padding: 1rem;
+}
+.botao-copiar{
+    font-size: 1.8rem;
+    background-color: transparent;
+    border-radius: 1.56rem;
+    height: 4rem;
+    width: 15rem;
+    border-color: #0A3871;
+    cursor: pointer;
+}
+    .botao-copiar:hover{
+        background-color: #bbd1bb;
+    }
+.mensagem-vazia{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.texto{
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+.informacao{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 0.2rem;
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+}
+.botao-criptografar{
+    font-size: 1.8rem;
+    color: white;
+    background-color: #0A3871;
+    padding: 0.375rem;
+    border-radius: 1.56rem;
+    border-color: #0A3871;
+    height: 4.18rem;
+    width: 17rem;
+    cursor: pointer;
+}
+.botao-criptografar:hover{
+    background-color: #3b2432;
+}
+.botao-descriptografar{
+    font-size: 1.8rem;
+    justify-content: flex-end;
+    background-color: #D8DFE8;
+    border-radius: 1.56rem;
+    height: 4.18rem;
+    width: 17rem;
+    border-color: #0A3871;
+    cursor: pointer;
+}
+.botao-descriptografar:hover{
+    background-color: #bbd1bb;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.autor{
+    font-size: 0.93rem;
+}
+.icones ion-icon{
+    cursor: pointer;
+    color: black;
+    height: 1.8rem;
+    width: 1.8rem;
+    align-items: center;
+}
+
+.icones ion-icon:hover{
+    color: green;
+}
+
+@media screen and(min-width:1100px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao-caixa-digite-texto{
+        width: auto;
+    }}
