@@ -40,7 +40,14 @@ body {
     font-size: 1.8rem;
     height: 22rem;
     width: 40.37rem;
-    padding: 4rem 0 0 5rem;
+    padding: 3rem 1rem 0 5rem;
+}
+.informacao{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 0.2rem;
+    padding: 0.5rem 0 0 0;
 }
 .img-menino-com-lupa{
     padding-top: 3rem;
@@ -79,12 +86,7 @@ body {
     font-size: 1rem;
     margin: 0.5rem;
 }
-.informacao{
-    display: flex;
-    align-items: center;
-    text-align: start;
-    gap: 0.2rem;
-}
+
 .botoes{
     display: flex;
     align-items: center;
