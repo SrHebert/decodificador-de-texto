@@ -211,6 +211,7 @@ body {
             gap: 5rem;
         }
         .caixa-de-texto{
+            width: 41rem;
             font-size: 3rem;
             padding: 0 1rem 0 0;
         }
