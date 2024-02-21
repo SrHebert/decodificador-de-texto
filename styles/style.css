@@ -12,6 +12,12 @@ body {
 .logo-inicio{
     padding: 0.625rem;
 }
+.bem-vindo{
+    text-transform: uppercase;
+    display: flex;
+    padding: 0 0 0 4rem;
+    gap: 1rem;
+}
 .apresentacao{
     display: flex;
     justify-content: space-between;
@@ -145,24 +151,28 @@ body {
 }
 
 @media (max-width:1174px){
-    
+    .logo-inicio{
+        padding: 0.625rem 1rem 5rem 0rem;
+    }
     .apresentacao{
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        padding: 0;
     }
     .apresentacao-caixa-digite-texto{
         padding: 0 0 0 0;
     }
     .caixa-de-texto{
+        height: 32rem;
         padding: 0 0 0 0;
     }
     .apresentacao-caixa-texto-criptografado{
-        height: 27rem;
+        height: 12rem;
         width: 38rem;
     }
     .img-menino-com-lupa{
-        height: 15rem;
+        display: none;
     }
     .rodape{
         display: flex;
@@ -171,13 +181,19 @@ body {
     }
     .botoes{
         gap: 1rem;
+        padding: 0.75rem 0 0.8125rem 2.75rem;
     }
     }
-    @media (max-width:375px){
+    @media (max-width:675px){
+        .hydrated {
+            visibility: inherit;
+            width: 43rem;
+        }
         .apresentacao{
             flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
+            padding: 0;
         }
         .apresentacao-caixa-digite-texto{
             display: flex;
@@ -188,8 +204,8 @@ body {
             padding: 0 1rem 0 0;
         }
         .apresentacao-caixa-texto-criptografado{
-            height: 27rem;
-            width: 34rem;
+            height: 12rem;
+            width: 38rem;
         }
         .rodape{
             display: flex;
@@ -201,5 +217,6 @@ body {
             align-items: center;
             gap: 1rem;
             flex-direction: column;
+            padding: 0.75rem 0 0.8125rem 10.75rem;
         }
     }
