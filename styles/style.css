@@ -154,6 +154,10 @@ body {
     .logo-inicio{
         padding: 0.625rem 1rem 5rem 0rem;
     }
+    .logo-inicio img{
+        height: 5rem;
+        width: 4rem;
+    }
     .apresentacao{
         flex-direction: column;
         flex-wrap: wrap;
@@ -185,6 +189,11 @@ body {
     }
     }
     @media (max-width:675px){
+        .logo-inicio img{
+            height: 5rem;
+            width: 4rem;
+
+        }
         .hydrated {
             visibility: inherit;
             width: 43rem;
@@ -194,18 +203,20 @@ body {
             flex-wrap: wrap;
             align-items: center;
             padding: 0;
+            gap: 8rem;
         }
         .apresentacao-caixa-digite-texto{
             display: flex;
             padding: 0 0 0 0;
+            gap: 5rem;
         }
         .caixa-de-texto{
-            font-size: 2rem;
+            font-size: 3rem;
             padding: 0 1rem 0 0;
         }
         .apresentacao-caixa-texto-criptografado{
             height: 12rem;
-            width: 38rem;
+            width: 33rem;
         }
         .rodape{
             display: flex;
@@ -215,8 +226,19 @@ body {
         .botoes{
             display: flex;
             align-items: center;
-            gap: 1rem;
             flex-direction: column;
-            padding: 0.75rem 0 0.8125rem 10.75rem;
+            gap: 2rem;
+            padding: 0.75rem 0 0.8125rem 0;
+        }
+        .botao-criptografar{
+            font-size: 2rem;
+            height: 6rem;
+            width: 41rem;
+        }
+
+        .botao-descriptografar{
+            font-size: 2rem;
+            height: 6rem;
+            width: 41rem;
         }
     }
