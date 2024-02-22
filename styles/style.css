@@ -92,6 +92,12 @@ body {
     font-size: 1rem;
     margin: 0.5rem;
 }
+.mensagem-co-decodificada{
+    resize: none;
+    background-color: transparent;
+    border: none;
+    overflow: hidden
+}
 
 .botoes{
     display: flex;

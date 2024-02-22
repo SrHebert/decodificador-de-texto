@@ -21,14 +21,15 @@
                     </p>
                 </div>
                 <div class="botoes">
-                    <button class="botao-criptografar">Criptografar</button>
-                    <button class="botao-descriptografar">Descriptografar</button>
+                    <button onclick="criptografarTexto()" class="botao-criptografar">Criptografar</button>
+                    <button onclick="DescriptoTexto()" class="botao-descriptografar">Descriptografar</button>
                 </div>
             </div>
             <div class="apresentacao-caixa-texto-criptografado">
                 <img class="img-menino-com-lupa" src="./assets/menino-com-lupa.svg" >
                 <h1 class="mensagem-vazia">Nenhuma mensagem encontrada</h1>
                 <p class="texto">Digite um texto que você deseja criptografar ou descriptografar</p>
+                <textarea class="mensagem-co-decodificada"></textarea>
                 <button class="botao-copiar"> Copiar</button>
             </div>
         </main>
