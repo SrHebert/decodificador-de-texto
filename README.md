@@ -1,5 +1,7 @@
 ## Sobre
 Este é um desafio que foi proposto dentro do curso da Alura.
+# Em andamento...  
+<img loading="lazy" src="https://www.blogson.com.br/wp-content/uploads/2017/10/lg.progress-bar-preloader.gif" width=100 height=80 target=_blank>
 
 ### Link Prévia do projeto: 
 [<img loading="lazy" src="https://www.irishsetter.org.uk/buttons/click-flashing.gif" width=130 height=40 target=_blank>](https://decodificador-de-texto-sigma.vercel.app/)
