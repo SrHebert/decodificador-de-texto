@@ -21,18 +21,27 @@
                     </p>
                 </div>
                 <div class="botoes">
-                    <button onclick="criptografarTexto()" class="botao-criptografar">Criptografar</button>
-                    <button onclick="DescriptoTexto()" class="botao-descriptografar">Descriptografar</button>
+                    <button onclick="btnCriptografarTexto()" class="botao-criptografar">Criptografar</button>
+                    <button onclick="btnDescriptoTexto()" class="botao-descriptografar">Descriptografar</button>
                 </div>
             </div>
             <div class="apresentacao-caixa-texto-criptografado">
-                <img class="img-menino-com-lupa" src="./assets/menino-com-lupa.svg" >
-                <h1 class="mensagem-vazia">Nenhuma mensagem encontrada</h1>
-                <p class="texto">Digite um texto que você deseja criptografar ou descriptografar</p>
-                <textarea class="mensagem-co-decodificada"></textarea>
-                <button class="botao-copiar"> Copiar</button>
+                <div>
+                    <img class="img-menino-com-lupa" src="./assets/menino-com-lupa.svg" >
+                </div>
+                <div class="segunda-caixa-paragrafos">
+                    <h1 class="mensagem-vazia">Nenhuma mensagem encontrada</h1>
+                    <p class="texto">Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <div class="div-botao-copiar">
+                    <input type="button" class="botao-copiar" value="Copiar" onclick="btnCopiar()">
+                </div>
+            </div>
+            <div  class="resultado">
+                <p class="texto-resultado"></p>
             </div>
         </main>
+
             <footer class="rodape">
                 <div class="icones">
                     <a href="https://github.com/SrHebert"><ion-icon name="logo-github"></ion-icon></a>
