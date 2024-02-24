@@ -40,7 +40,11 @@ function descriptografar(string){
 }
 
 function btnCriptografarTexto(){
-    console.log(resultado)
+    console.log(resultado);
+}
+
+function btnDescriptografar(){
+    console.log("O botão foi clicado!");
 }
 
 let test = "texto de teste";
