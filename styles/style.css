@@ -87,7 +87,10 @@ body {
 }
     .botao-copiar:hover{
         background-color: #bbd1bb;
-    }
+}
+.ocultar{
+    display: none;
+}
 .mensagem-vazia{
     font-size: 1.8rem;
     font-weight: 600;
