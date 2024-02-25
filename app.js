@@ -4,8 +4,8 @@ var imagemMeninoComLupa = querySelector('.img-menino-com-lupa');
 var paragrafoNadaEncontrado = querySelector('.segunda-caixa-paragrafos');
 var textoResutado = querySelector('.resultado');
 
-btnCriptografar.onclick = criptografar;
-btnDescriptografar.onclick = descriptografar;
+btnCriptografarTexto.onclick = criptografar;
+btnDescriptoTexto.onclick = descriptografar;
 
 let letrasCodificadas = [
     ["e", "enter"],
@@ -15,9 +15,26 @@ let letrasCodificadas = [
     ["u", "ufat"],
 ]
 
-function criptografar(string) {
-    caixaDeTexto2 = resultado;
-    caixaDeTexto1 = string
+function criptografar() {
+    ocultarParagrafosCaixa2();
+    var caixaDeTexto1 = recuperarTexto()
+    resultado.textContent = criptografar(caixaDeTexto1)
+}
+
+function descriptografar(){
+    ocultarParagrafosCaixa2()
+    var caixaDetexto1 = recuperarTexto()
+    resultado.textContent = descriptografar(caixaDetexto1);
+}
+
+function recuperarTexto(){
+    var caixaDeTexto1 = document.querySelector('.caixa-de-texto')
+    return caixaDeTexto1.value
+}
+function ocultarParagrafosCaixa2(){
+    imagemMeninoComLupa.classList.add(".ocultar");
+    segunda-caixa-paragrafos.classList.add(".ocultar")
+}
     const resultado = string
         .replaceAll("e","enter")
         .replaceAll("i","imes")
@@ -46,9 +63,3 @@ function btnCriptografarTexto(){
 function btnDescriptografar(){
     console.log("O botão foi clicado!");
 }
-
-let test = "texto de teste";
-let testDescriptografado = "tenterxtober denter tenterstenter"
-
-console.log(criptografar(test));
-console.log(descriptografar(testDescriptografado));
