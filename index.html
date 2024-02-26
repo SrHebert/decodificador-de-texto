@@ -3,60 +3,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CriptoDes</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="shortcut icon" type="imagex/png" href="./assets/icon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/icon.ico">
 </head>
 <body>
-        <main class="apresentacao">
-            <div class="apresentacao-caixa-digite-texto">
-                <header class="cabecalho">
-                    <div class="logo-inicio">
-                        <img src="./assets/logo-alura.svg">
-                    </div>
-                </header>
+    <header class="logo-inicio" id="cabecalho">
+        <img src="assets/logo-alura.svg">
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao-caixa-digite-texto">
                 <textarea class="caixa-de-texto" placeholder="Digite seu texto aqui..." title="Digite seu texto"></textarea>
-                <div>
-                    <p class="informacao">
-                        <img src="./assets/icone-exclamacao.svg" alt="exclamação">Apenas letras minúsculas e sem acento.
-                    </p>
-                </div>
-                <div class="botoes">
-                    <button onclick="btnCriptografarTexto()" class="botao-criptografar">Criptografar</button>
-                    <button onclick="btnDescriptoTexto()" class="botao-descriptografar">Descriptografar</button>
-                </div>
+            <div>
+                <p class="informacao">
+                        <img src="assets/icone-exclamacao.svg" alt="exclamação">Apenas letras minúsculas e sem acento.
+                </p>
             </div>
-            <div class="apresentacao-caixa-texto-criptografado">
-                <div>
-                    <img class="img-menino-com-lupa" src="./assets/menino-com-lupa.svg" >
-                </div>
-                <div onclick="ocultarParagrafosCaixa2()" class="segunda-caixa-paragrafos">
-                    <h1 class="mensagem-vazia">Nenhuma mensagem encontrada</h1>
-                    <p class="texto">Digite um texto que você deseja criptografar ou descriptografar</p>
-                </div>
-                <div class="div-botao-copiar">
-                    <input type="button" class="botao-copiar" value="Copiar" onclick="btnCopiar()">
-                </div>
+            <div class="botoes">
+                <button onclick="btnCriptografarTexto()" class="botao-criptografar">Criptografar</button>
+                <button onclick="btnDescriptoTexto()" class="botao-descriptografar">Descriptografar</button>                </div>
+        </section>
+        <section class="apresentacao-caixa-texto-criptografado">
+            <div>
+                 <img class="menino-com-lupa" src="assets/menino-com-lupa.svg" >
+            </div>
+            <div class="caixa-paragrafos">
+               <h1 class="mensagem-vazia">Nenhuma mensagem encontrada</h1>
+                <p class="texto">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <div class="div-botao-copiar">
+                  <input type="button" class="botao-copiar" value="Copiar" onclick="btnCopiar()">
             </div>
             <div  class="resultado">
                 <p class="texto-resultado"></p>
             </div>
-        </main>
 
-            <footer class="rodape">
-                <div class="icones">
-                    <a href="https://github.com/SrHebert"><ion-icon name="logo-github"></ion-icon></a>
-                    <a href="https://www.linkedin.com/in/ronny-hebert/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-                <div>
-                    <h1 class="autor">© Ronny Hebert</h1>
-                    <h2 class="autor">2024</h2>
-                </div>
-            </footer>
-         <script src="app.js"></script>
+        </section>      
+     </main>
 
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <footer class="rodape">
+        <div class="icones">
+            <a href="https://github.com/SrHebert"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/ronny-hebert/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <div>
+            <h1 class="autor">© Ronny Hebert</h1>
+            <h2 class="autor">2024</h2>
+        </div>
+    </footer>
+        
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     </body>
 </html>
