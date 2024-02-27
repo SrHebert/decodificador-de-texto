@@ -1,20 +1,20 @@
-var btnCriptografar = querySelector('.botao-criptografar');
-var btnDescriptografar = querySelector('.botao-descriptografar');
-var imagemMeninoComLupa = querySelector('.menino-com-lupa');
-var conteudoParagrafos = querySelector('.caixa-paragrafos');
-var textoResutado = querySelector('.resultado');
+var btnCriptografar = document.querySelector(".botao-criptografar");
+var btnDescriptografar = document.querySelector(".botao-descriptografar");
+var imagemMeninoComLupa = document.querySelector(".menino-com-lupa");
+var conteudoParagrafos = document.querySelector(".caixa-paragrafos");
+var textoResutado = document.querySelector("#texto-resultado");
 
-btnCriptografarTexto.onclick = criptografar;
-btnDescriptoTexto.onclick = descriptografar;
+btnCriptografar.onclick = criptografar;
+btnDescriptografar.onclick = descriptografar;
 
 function criptografar() {
-    ocultarParagrafosCaixa2();
+    ocultarParagrafos();
     var caixaDeTexto = recuperarTexto()
-    resultado.textContent = criptografarTexto(caixaDeTexto)
+    textoResutado.textContent = criptografarTexto(caixaDeTexto)
 }
 
 function descriptografar(){
-    ocultarParagrafosCaixa2()
+    ocultarParagrafos()
     var caixaDetexto = recuperarTexto()
     resultado.textContent = descriptografarTexto(caixaDetexto);
 }
@@ -32,7 +32,7 @@ function criptografarTexto(mensagem){
     var texto = mensagem;
     var textoFinal = "";
 
-    for(var i = 0; 0< texto.leng; i++){
+    for(var i = 0; 0 < texto.leng; i++){
         if(texto[i]== "a"){
             textoFinal = textoFinal + "ai"
         }
@@ -55,18 +55,16 @@ function criptografarTexto(mensagem){
     }
     return textoFinal
 }
+    
+    function botaoCopiar(){
+        document.getElementsById("#botaoCopiar").addEventListener('click', botaoCopiar);
+        document.querySelector('#texto-resultado').select();
+        document.execCommand("copiar");
+    }
 
-function copiar(){
-    let copiarTexto = document.getElementsByClassName(".caixa-de-texto");
-
-    copiarTexto.select();
-    document.execCommand("copy");
-    alert("Texto copiado.");
-}
-
-const btnCopiar = document.querySelector(".btn-copiar");
-    btnCopiar.addEventListener ("click", copiar = () => {
-    var conteudo = document.querySelector(".texto-resultado").textContent;
-    navigator.clipboard.writeText(conteudo);
-    console.log("Olá");    
-    })
+//const btnCopiar = document.querySelector(".btn-copiar");
+   // btnCopiar.addEventListener ("click", copiar = () => {
+   // var conteudo = document.querySelector(".texto-resultado").textContent;
+    //navigator.clipboard.writeText(conteudo);
+   // console.log("Olá");    
+    //})
