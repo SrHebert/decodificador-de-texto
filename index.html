@@ -1,7 +1,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CriptoDes</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/icon.ico">
@@ -20,11 +22,11 @@
                 </p>
             </div>
             <div class="botoes">
-                <button onclick="btnCriptografarTexto()" class="botao-criptografar">Criptografar</button>
-                <button onclick="btnDescriptoTexto()" class="botao-descriptografar">Descriptografar</button>                </div>
+                <button class="botao-criptografar">Criptografar</button>
+                <button class="botao-descriptografar">Descriptografar</button>                </div>
         </section>
         <section class="apresentacao-caixa-texto-criptografado">
-            <div>
+            <div class="menino-com-lupa">
                  <img class="menino-com-lupa" src="assets/menino-com-lupa.svg" >
             </div>
             <div class="caixa-paragrafos">
@@ -32,10 +34,10 @@
                 <p class="texto">Digite um texto que você deseja criptografar ou descriptografar</p>
             </div>
             <div class="div-botao-copiar">
-                  <input type="button" class="botao-copiar" value="Copiar" onclick="btnCopiar()">
+                  <input onclick="" type="button" id="botaoCopiar" value="Copiar">
             </div>
             <div  class="resultado">
-                <p class="texto-resultado"></p>
+                <p id="texto-resultado"></p>
             </div>
 
         </section>      
