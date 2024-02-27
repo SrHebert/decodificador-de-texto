@@ -76,7 +76,7 @@ body {
     width: 31.25rem;
     padding: 1rem;
 }
-.botao-copiar{
+#botaoCopiar{
     font-size: 1.8rem;
     background-color: transparent;
     border-radius: 1.56rem;
