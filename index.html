@@ -1,7 +1,6 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CriptoDes</title>
@@ -10,36 +9,28 @@
 </head>
 <body>
     <header class="logo-inicio" id="cabecalho">
-        <img src="assets/logo-alura.svg">
+        <img class="logoAlura" src="assets/logo-alura.svg" alt="logo da Alura">
     </header>
 
-    <main class="apresentacao">
-        <section class="apresentacao-caixa-digite-texto">
-                <textarea class="caixa-de-texto" placeholder="Digite seu texto aqui..." title="Digite seu texto"></textarea>
+    <main>
+        <section>
+                <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto aqui..." title="Digite seu texto"></textarea>
+            
             <div>
-                <p class="informacao">
+                <h6 class="informacao">
                         <img src="assets/icone-exclamacao.svg" alt="exclamação">Apenas letras minúsculas e sem acento.
-                </p>
-            </div>
-            <div class="botoes">
-                <button class="botao-criptografar">Criptografar</button>
-                <button class="botao-descriptografar">Descriptografar</button>                </div>
-        </section>
-        <section class="apresentacao-caixa-texto-criptografado">
-            <div class="menino-com-lupa">
-                 <img class="menino-com-lupa" src="assets/menino-com-lupa.svg" >
-            </div>
-            <div class="caixa-paragrafos">
-               <h1 class="mensagem-vazia">Nenhuma mensagem encontrada</h1>
-                <p class="texto">Digite um texto que você deseja criptografar ou descriptografar</p>
-            </div>
-            <div class="div-botao-copiar">
-                  <input onclick="" type="button" id="botaoCopiar" value="Copiar">
-            </div>
-            <div  class="resultado">
-                <p id="texto-resultado"></p>
+                </h6>
             </div>
 
+            <div class="botoes">
+                <button class="botao-criptografar" onclick="btnCriptografar()">Criptografar</button>
+                <button class="botao-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>                
+            </div>
+        </section>
+
+        <section class="output-texto">
+            <textarea class="mensagem" cols="20" rows="10" placeholder="Nenhuma mensagem encontrada! Digite sua mensagem ao lado!" disabled ></textarea>
+            <button type="button" id="botaoCopiar" value="Copiar" onclick="btnCopiar()">Copiar</button>
         </section>      
      </main>
 
@@ -49,8 +40,7 @@
             <a href="https://www.linkedin.com/in/ronny-hebert/"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
         <div>
-            <h1 class="autor">© Ronny Hebert</h1>
-            <h2 class="autor">2024</h2>
+            <h1 class="autor">© Ronny Hebert - 2024</h1>
         </div>
     </footer>
         
