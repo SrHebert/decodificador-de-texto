@@ -1,113 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Inter",sans-serif;
-}
-body {
     background-color: #c7d1f1;
-    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    line-height: 150%;
 }
-.logo-inicio{
-    padding: 0.625rem;
+.logoAlura{
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 2%;
 }
-.bem-vindo{
-    text-transform: uppercase;
-    display: flex;
-    padding: 0 0 0 4rem;
-    gap: 1rem;
-}
-.apresentacao{
+main{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     box-sizing: border-box;
     padding: 0 2rem;
-    margin: 0.625rem;
+    margin-bottom: 3.125rem;
+    margin-left: 5rem;
 }
-.cabecalho{
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
-.apresentacao-caixa-digite-texto{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 0 0 0 2rem;
-}
-.caixa-de-texto{
-    background-color: transparent;
+.text-area{
+    font-size: 2rem;
     border: none;
-    resize: none;
     color: #0A3871;
-    display: flex;
-    font-size: 1.8rem;
-    height: 22rem;
-    width: 40.37rem;
-    padding: 3rem 1rem 0 5rem;
-}
-.caixa-de-texto::placeholder{
-    color:#0A3871 ;
-}
-.informacao{
-    display: flex;
-    align-items: center;
-    text-align: start;
-    gap: 0.2rem;
-    padding: 0.5rem 0 0 0;
-}
-.img-menino-com-lupa{
-    padding-top: 3rem;
-}
-.apresentacao-caixa-texto-criptografado{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    font-size: 1.25rem;
-    background-color: white;
-    border-radius: 30px;
-    height: 33rem;
-    width: 31.25rem;
-    padding: 1rem;
-}
-#botaoCopiar{
-    font-size: 1.8rem;
-    background-color: transparent;
-    border-radius: 1.56rem;
-    height: 4rem;
-    width: 15rem;
-    border-color: #0A3871;
-    cursor: pointer;
-}
-    .botao-copiar:hover{
-        background-color: #bbd1bb;
-}
-.ocultar{
-    display: none;
-}
-.mensagem-vazia{
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-.texto{
-    font-size: 1rem;
-    margin: 0.5rem;
-}
-.mensagem-co-decodificada{
+    margin-top: 90px;
+    text-transform: lowercase;
     resize: none;
-    background-color: transparent;
-    border: none;
-    overflow: hidden;
 }
+::placeholder{color: #0A3871;}
+.text-area:focus{
+    outline: none;
+}
+.output-texto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mensagem{
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-top: 20px;
+    resize: none;
+    height: 29rem;
+    width: 20rem;
 
+}
+.mensagem::placeholder{
+    display: flex;
+    align-items: end;
+    text-align:justify;
+    background-repeat: no-repeat;
+    height: 21rem;
+    width: 19.125rem;
+    padding-left: 5px;
+    padding-top: 120px;
+}
 .botoes{
     display: flex;
+    margin-top: 18px;
     align-items: center;
     gap: 3rem;
     padding: 1rem;
@@ -117,7 +74,7 @@ body {
     color: white;
     background-color: #0A3871;
     padding: 0.375rem;
-    border-radius: 1.56rem;
+    border-radius: 1.5rem;
     border-color: #0A3871;
     height: 4.18rem;
     width: 17rem;
@@ -130,7 +87,7 @@ body {
     font-size: 1.8rem;
     justify-content: flex-end;
     background-color: #D8DFE8;
-    border-radius: 1.56rem;
+    border-radius: 1.5rem;
     height: 4.18rem;
     width: 17rem;
     border-color: #0A3871;
@@ -139,7 +96,21 @@ body {
 .botao-descriptografar:hover{
     background-color: #bbd1bb;
 }
-
+#botaoCopiar {
+    font-size: 1.8rem;
+    border: 1px solid #0A3871;
+    background-color: white;
+    border-radius: 1.5rem;
+    color: black;
+    height: 67px;
+    width: 18rem;
+    margin-top: 25rem;
+    position: absolute;
+}
+.informacao{
+    color: #495057;
+    font-size: 18px;
+}
 .rodape{
     display: flex;
     justify-content: center;
@@ -164,95 +135,10 @@ body {
 }
 
 @media (max-width:1174px){
-    .logo-inicio{
-        padding: 0.625rem 1rem 5rem 0rem;
+
+    
     }
-    .logo-inicio img{
-        height: 5rem;
-        width: 4rem;
-    }
-    .apresentacao{
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 0;
-    }
-    .apresentacao-caixa-digite-texto{
-        padding: 0 0 0 0;
-    }
-    .caixa-de-texto{
-        height: 32rem;
-        padding: 0 0 0 0;
-    }
-    .apresentacao-caixa-texto-criptografado{
-        height: 12rem;
-        width: 38rem;
-    }
-    .menino-com-lupa{
-        display: none;
-    }
-    .rodape{
-        display: flex;
-        text-align: center;
-        padding: 1rem;
-    }
-    .botoes{
-        gap: 1rem;
-        padding: 0.75rem 0 0.8125rem 2.75rem;
-    }
-    }
+    
     @media (max-width:675px){
-        .logo-inicio img{
-            height: 5rem;
-            width: 4rem;
-
-        }
-        .hydrated {
-            visibility: inherit;
-            width: 43rem;
-        }
-        .apresentacao{
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-            padding: 0;
-            gap: 4rem;
-        }
-        .apresentacao-caixa-digite-texto{
-            display: flex;
-            padding: 0 0 0 0;
-            gap: 5rem;
-        }
-        .caixa-de-texto{
-            width: 41rem;
-            font-size: 3rem;
-            padding: 0 1rem 0 0;
-        }
-        .apresentacao-caixa-texto-criptografado{
-            height: 12rem;
-            width: 37rem;
-        }
-        .rodape{
-            display: flex;
-            text-align: center;
-            padding: 1rem;
-        }
-        .botoes{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 2rem;
-            padding: 0.75rem 0 0.8125rem 0;
-        }
-        .botao-criptografar{
-            font-size: 2rem;
-            height: 6rem;
-            width: 41rem;
-        }
-
-        .botao-descriptografar{
-            font-size: 2rem;
-            height: 6rem;
-            width: 41rem;
-        }
+        
     }
