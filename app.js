@@ -42,4 +42,5 @@ function btnDescriptografar(){
 function copiarTexto() {
     let textoCopiado = document.querySelector(".mensagem");
     navigator.clipboard.writeText(textoCopiado.value);
+    alert('Texto copiado!');
 }
