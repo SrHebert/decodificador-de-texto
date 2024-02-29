@@ -32,3 +32,14 @@ function descriptografar(stringDescriptografada) {
     }
     return stringDescriptografada
 }
+
+function btnDescriptografar(){
+    textoDescriptografado = descriptografar(textArea.value);
+    mensagem.value = textoDescriptografado;
+    textArea.value = "";
+}
+
+function copiarTexto() {
+    let textoCopiado = document.querySelector(".mensagem");
+    navigator.clipboard.writeText(textoCopiado.value);
+}
