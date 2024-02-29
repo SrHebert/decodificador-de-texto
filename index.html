@@ -29,8 +29,8 @@
         </section>
 
         <section class="output-texto">
-            <textarea class="mensagem" cols="20" rows="10" placeholder="Nenhuma mensagem encontrada! Digite sua mensagem ao lado!" disabled ></textarea>
-            <button type="button" id="botaoCopiar" value="Copiar" onclick="btnCopiar()">Copiar</button>
+            <textarea class="mensagem" id="msg" cols="20" rows="10" placeholder="Nenhuma mensagem encontrada! Digite sua mensagem ao lado!" disabled ></textarea>
+            <button type="button" id="botaoCopiar">Copiar</button>
         </section>      
      </main>
 
@@ -47,6 +47,14 @@
     <script src="app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+    document.getElementById('botaoCopiar').addEventListener('click', botaoCopiar);
 
+    async function btnCopiar(){
+    let text = document.querySelector('#msg').value;
+    await navigator.clipboard.writeText(text);
+    }
+    </script>
+    
     </body>
 </html>

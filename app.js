@@ -1,70 +1,34 @@
-var btnCriptografar = document.querySelector(".botao-criptografar");
-var btnDescriptografar = document.querySelector(".botao-descriptografar");
-var imagemMeninoComLupa = document.querySelector(".menino-com-lupa");
-var conteudoParagrafos = document.querySelector(".caixa-paragrafos");
-var textoResutado = document.querySelector("#texto-resultado");
+const textArea = document.querySelector('.text-area');
+const mensagem = document.querySelector('.mensagem');
 
-btnCriptografar.onclick = criptografar;
-btnDescriptografar.onclick = descriptografar;
 
-function criptografar() {
-    ocultarParagrafos();
-    var caixaDeTexto = recuperarTexto()
-    textoResutado.textContent = criptografarTexto(caixaDeTexto)
-}
 
-function descriptografar(){
-    ocultarParagrafos()
-    var caixaDetexto = recuperarTexto()
-    resultado.textContent = descriptografarTexto(caixaDetexto);
-}
+function criptografar(stringCriptografada) {
+    let matrizCodigo = [["e", "enter"], ["i","imes"], ["a", "ai"], ["o", "ober" ], ["u", "ufat"]];
+    stringCriptografada = stringCriptografada.toLowerCase();
 
-function recuperarTexto(){
-    var caixaDeTexto = document.querySelector('.caixa-de-texto')
-    return caixaDeTexto.value
-}
-function ocultarParagrafos(){
-    imagemMeninoComLupa.classList.add(".ocultar");
-    conteudoParagrafos.classList.add(".ocultar")
-}
-
-function criptografarTexto(mensagem){
-    var texto = mensagem;
-    var textoFinal = "";
-
-    for(var i = 0; 0 < texto.leng; i++){
-        if(texto[i]== "a"){
-            textoFinal = textoFinal + "ai"
+    for(let i=0; i < matrizCodigo.length; i++) {
+        if(stringCriptografada.includes(matrizCodigo[i][0])) {
+            stringCriptografada = stringCriptografada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
         }
-        else if(texto[i]== "e"){
-            textoFinal = textoFinal + "enter"
-        }
-        else if(texto[i]== "i"){
-            textoFinal = textoFinal + "imes"
-        }
-        else if(texto[i]== "o"){
-            textoFinal = textoFinal + "ober"
-        }
-        else if(texto[i]== "u"){
-            textoFinal = textoFinal + "ufat"
-        }
-        else {
-            textoFinal = textoFinal = texto[i]
-        }
-        
     }
-    return textoFinal
+    return stringCriptografada
 }
-    
-    function botaoCopiar(){
-        document.getElementsById("#botaoCopiar").addEventListener('click', botaoCopiar);
-        document.querySelector('#texto-resultado').select();
-        document.execCommand("copiar");
-    }
 
-//const btnCopiar = document.querySelector(".btn-copiar");
-   // btnCopiar.addEventListener ("click", copiar = () => {
-   // var conteudo = document.querySelector(".texto-resultado").textContent;
-    //navigator.clipboard.writeText(conteudo);
-   // console.log("Olá");    
-    //})
+function btnCriptografar(){
+    textoCriptografado = criptografar(textArea.value);
+    mensagem.value = textoCriptografado;
+    textArea.value = "";
+}
+
+function descriptografar(stringDescriptografada) {
+    let matrizCodigo = [["e", "enter"], ["i","imes"], ["a", "ai"], ["o", "ober" ], ["u", "ufat"]];
+    stringDescriptografada = stringDescriptografada.toLowerCase();
+
+    for(let i=0; i < matrizCodigo.length; i++) {
+        if(stringDescriptografada.includes(matrizCodigo[i][1])) {
+            stringDescriptografada = stringDescriptografada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
+        }
+    }
+    return stringDescriptografada
+}

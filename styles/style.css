@@ -38,7 +38,6 @@ main{
     flex-direction: column;
 }
 .mensagem{
-    text-align: center;
     align-items: center;
     font-size: 2rem;
     background-color: white;
@@ -106,6 +105,10 @@ main{
     width: 18rem;
     margin-top: 25rem;
     position: absolute;
+    cursor: pointer;
+}
+#botaoCopiar:hover{
+    background-color: #bbd1bb;
 }
 .informacao{
     color: #495057;
